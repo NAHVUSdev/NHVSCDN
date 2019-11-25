@@ -9,7 +9,6 @@ app.get('/', function (req, res) {
 });
 
 // RESOURCES
-
 app.get('/assets/global.css', function (req, res) {
     "use strict";
     res.sendFile('global.css', {root: path.join(__dirname, 'app/assets')});
