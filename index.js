@@ -26,5 +26,9 @@ app.get('/default.js', function (req, res) {
     "use strict";
     res.sendFile(path.join(__dirname + '/app/default.js'));
 });
+app.get('/favicon.ico', function (req, res) {
+    "use strict";
+    res.sendFile(path.join(__dirname + '/app/favicon.ico'));
+});
 
 app.listen(8080);
