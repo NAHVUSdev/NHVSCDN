@@ -1,0 +1,29 @@
+/* CSS FROM: nahvuscdn.com
+MODIFIED FOR: Project Kenai */
+
+.card {
+    font-family: 'Acumin Pro', sans-serif;
+    border: solid 2px #7A7A7A;
+    border-radius: 5px;
+    padding: 2% 2% 2% 2%;
+    background: #424242;
+    margin-bottom: 20px;
+}
+
+.card #heading {
+    font-weight: 700;
+    font-size: 22pt;
+    color: WHITE;
+}
+
+.card p {
+    color: #E0E0E0;
+    font-size: 12pt;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Acumin Pro', sans-serif;
+    color: #9E9E9E;
+    font-size: 12pt;
+}
