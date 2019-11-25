@@ -10,17 +10,21 @@ app.get('/', function (req, res) {
 });
 
 // RESOURCES
+app.get('/logo.png', function (req, res) {
+    "use strict";
+    res.sendFile(path.join(__dirname + '/app/nahvusLogo.png'));
+});
 app.get('/global.css', function (req, res) {
     "use strict";
-    res.sendFile(path.join(__dirname + '/app/assets/global.css'));
+    res.sendFile(path.join(__dirname + '/app/global.css'));
 });
 app.get('/style.css', function (req, res) {
     "use strict";
-    res.sendFile(path.join(__dirname + '/app/assets/style.css'));
+    res.sendFile(path.join(__dirname + '/app/style.css'));
 });
 app.get('/default.js', function (req, res) {
     "use strict";
-    res.sendFile(path.join(__dirname + '/app/assets/default.js'));
+    res.sendFile(path.join(__dirname + '/app/default.js'));
 });
 
 app.listen(8080);
