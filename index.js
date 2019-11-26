@@ -31,4 +31,27 @@ app.get('/favicon.ico', function (req, res) {
     res.sendFile(path.join(__dirname + '/app/favicon.ico'));
 });
 
+var require;
+var express = require('express');
+var app = express();
+var path = require('path');
+
+app.get('/:name', function (req, res, next) {
+    var options = {
+        root: path.join(__dirname, 'app')
+    }
+
+    var fileName = req.params.name
+    res.sendFile(fileName, options, function (err) {
+        if (err) {
+            next(err)
+        } else {
+            console.log('Sent:', fileName)
+        }
+    })
+});
+
+app.listen(8080);
+
+
 app.listen(8080);
