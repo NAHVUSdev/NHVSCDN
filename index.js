@@ -31,11 +31,6 @@ app.get('/favicon.ico', function (req, res) {
     res.sendFile(path.join(__dirname + '/app/favicon.ico'));
 });
 
-var require;
-var express = require('express');
-var app = express();
-var path = require('path');
-
 app.get('/:name', function (req, res, next) {
     var options = {
         root: path.join(__dirname, 'app')
@@ -50,8 +45,5 @@ app.get('/:name', function (req, res, next) {
         }
     })
 });
-
-app.listen(8080);
-
 
 app.listen(8080);
