@@ -33,10 +33,50 @@ html, body {
     margin-right: 12px;
 }
 
+.menuLinkActive {
+    font-family: 'Nimbus Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    color: #3363CC;
+    font-size: 14pt;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: 2.5px;
+    cursor: pointer;
+    text-transform: lowercase;
+    margin-right: 12px;
+}
+
 .menuLink:hover {
     color: #8F8F8F;
 }
 
 .contentWrapper {
     padding: 2% 5% 10% 5%;
+}
+
+.card {
+    font-family: 'Acumin Pro', sans-serif;
+    border: solid 2px #7A7A7A;
+    border-radius: 5px;
+    padding: 2% 2% 2% 2%;
+    background: #424242;
+    margin-bottom: 20px;
+}
+
+.card #heading {
+    font-weight: 700;
+    font-size: 22pt;
+    color: WHITE;
+}
+
+.card p {
+    color: #E0E0E0;
+    font-size: 12pt;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Acumin Pro', sans-serif;
+    color: #9E9E9E;
+    font-size: 12pt;
 }
