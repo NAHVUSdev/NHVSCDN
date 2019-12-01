@@ -65,7 +65,7 @@ body {
     margin-bottom: 20px;
 }
 
-.card #heading {
+.card #heading, .heading {
     font-weight: 700;
     font-size: 22pt;
     color: WHITE;
