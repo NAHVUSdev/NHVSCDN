@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 // RESOURCES
 app.get('/logo.png', function(req, res) {
-    res.sendFile(path.join(__dirname + '/app/nahvusLogo.png'));
+    res.sendFile(path.join(__dirname + '/app/img/nahvusLogo.png'));
 });
 app.get('/global.css', function(req, res) {
     res.sendFile(path.join(__dirname + '/app/global.css'));
@@ -23,7 +23,15 @@ app.get('/default.js', function(req, res) {
     res.sendFile(path.join(__dirname + '/app/default.js'));
 });
 app.get('/favicon.ico', function(req, res) {
-    res.sendFile(path.join(__dirname + '/app/favicon.ico'));
+    res.sendFile(path.join(__dirname + '/app/img/favicon.ico'));
 });
-
+app.get('/tls.png', function(req, res) {
+    res.sendFile(path.join(__dirname + '/app/img/tls.png'));
+});
+app.get('/tls.ico', function(req, res) {
+    res.sendFile(path.join(__dirname + '/app/img/tls.ico'));
+});
+app.get('/tls-noclip.png', function(req, res) {
+    res.sendFile(path.join(__dirname + '/app/img/tls-noclip.png'));
+});
 app.listen(8080);
